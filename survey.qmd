@@ -25,7 +25,7 @@ all-questions-required: false
 library(surveydown)
 ```
 
-::: {.sd_page id=welcome}
+--- welcome
 
 # Template - Conditional Showing
 
@@ -50,9 +50,7 @@ Please proceed to the next page.
 sd_next()
 ```
 
-:::
-
-::: {.sd_page id=basic_showif}
+--- basic_showif
 
 ## 1. Simple conditional showing
 
@@ -82,9 +80,7 @@ sd_question(
 sd_next()
 ```
 
-:::
-
-::: {.sd_page id=custom_showif}
+--- custom_showif
 
 ## 2. Complex conditional showing
 
@@ -122,9 +118,7 @@ sd_question(
 sd_next()
 ```
 
-:::
-
-::: {.sd_page id=numeric_show_if}
+--- numeric_show_if
 
 ## 3. Conditional showing based on a numeric value
 
@@ -154,9 +148,7 @@ sd_question(
 sd_next()
 ```
 
-:::
-
-::: {.sd_page id=multi_show_if}
+--- multi_show_if
 
 ## 4. Conditional showing based on multiple inputs
 
@@ -196,9 +188,7 @@ sd_question(
 sd_next()
 ```
 
-:::
-
-::: {.sd_page id=custom_function}
+--- custom_function
 
 ## 5. Conditional showing based on a custom function
 
@@ -220,9 +210,7 @@ sd_question(
 sd_next()
 ```
 
-:::
-
-::: {.sd_page id=conditional_page}
+--- conditional_page
 
 ## 6. Conditional page showing
 
@@ -250,9 +238,7 @@ sd_question(
 sd_next()
 ```
 
-:::
-
-::: {.sd_page id=cat_page}
+--- cat_page
 
 ## Cat Page
 
@@ -268,9 +254,7 @@ This is the cat page because you chose "**Cat**" in the previous question. You w
 sd_next()
 ```
 
-:::
-
-::: {.sd_page id=dog_page}
+--- dog_page
 
 ## Dog Page
 
@@ -285,14 +269,11 @@ This is the dog page because you chose "**Dog**" in the previous question. You w
 ```{r}
 sd_next()
 ```
-:::
 
-::: {.sd_page id=end}
+--- end
 
 ## This is the end of the survey template of the conditional showing feature.
 
 ```{r}
 sd_close()
 ```
-
-:::
