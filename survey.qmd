@@ -1,24 +1,23 @@
 ---
-# General Settings
-format: html
-echo: false
-warning: false
+# The YAML header specifies several settings for the survey but is not required.
+# A full list of settings can be found under _survey/settings.yml directory.
 
-# Theme Settings
-theme: default
-barposition: top
-footer-left: "Made with [surveydown](https://surveydown.org)"
-footer-right: '[<i class="bi bi-github"></i> Source Code](https://github.com/surveydown-dev/template_conditional_showing)'
+theme-settings:
+  theme: default
+  barposition: top
+  footer-left: "Made with [surveydown](https://surveydown.org)"
+  footer-right: '[<i class="bi bi-github"></i> Source Code](https://github.com/surveydown-dev/template_conditional_showing)'
 
-# Survey Settings
-use-cookies: false
-auto-scroll: false
-rate-survey: false
-system-language: en
-highlight-unanswered: true
-highlight-color: blue
-capture-metadata: true
-all-questions-required: false
+survey-settings:
+  show-previous: false
+  use-cookies: false
+  auto-scroll: false
+  rate-survey: false
+  system-language: en
+  highlight-unanswered: true
+  highlight-color: blue
+  capture-metadata: true
+  all-questions-required: false
 ---
 
 ```{r}
@@ -46,10 +45,6 @@ It consists of:
 
 Please proceed to the next page.
 
-```{r}
-sd_next()
-```
-
 --- basic_showif
 
 ## 1. Simple conditional showing
@@ -76,8 +71,6 @@ sd_question(
   id    = "penguins_simple_other",
   label = "Please specify the other penguin type:"
 )
-
-sd_next()
 ```
 
 --- custom_showif
@@ -114,8 +107,6 @@ sd_question(
   id    = "penguins_complex_other",
   label = "Please specify the other penguin type:"
 )
-
-sd_next()
 ```
 
 --- numeric_show_if
@@ -144,8 +135,6 @@ sd_question(
     "EV"  = "ev"
   )
 )
-
-sd_next()
 ```
 
 --- multi_show_if
@@ -184,8 +173,6 @@ sd_question(
   label  = "You picked a lot of fruit types. How many do you eat in a day?",
   option = seq(1,5)
 )
-
-sd_next()
 ```
 
 --- custom_function
@@ -206,8 +193,6 @@ sd_question(
   id    = "pet_type",
   label = "Please specify your pet type(s):"
 )
-
-sd_next()
 ```
 
 --- conditional_page
@@ -234,8 +219,6 @@ sd_question(
     'Dog' = 'dog'
   )
 )
-
-sd_next()
 ```
 
 --- cat_page
@@ -250,10 +233,6 @@ This is the cat page because you chose "**Cat**" in the previous question. You w
 
 <br>
 
-```{r}
-sd_next()
-```
-
 --- dog_page
 
 ## Dog Page
@@ -265,10 +244,6 @@ This is the dog page because you chose "**Dog**" in the previous question. You w
 </center>
 
 <br>
-
-```{r}
-sd_next()
-```
 
 --- end
 
