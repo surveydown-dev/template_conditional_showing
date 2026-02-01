@@ -38,36 +38,36 @@ server <- function(input, output, session) {
   # Used for case 5
   # Custom function to check if pet number input is > 1
   more_than_one_pet <- function(input) {
-    if (is.null(input$pet_number)) {
+    if (is.null(sd_value("pet_number"))) {
       return(FALSE)
     }
-    num_pets <- as.numeric(input$pet_number)
+    num_pets <- as.numeric(sd_value("pet_number"))
     return(num_pets > 1)
   }
 
   # Define any conditional showing logic here (show a question if a condition is true)
   sd_show_if(
     # 1. Simple conditional showing
-    input$penguins_simple == "other" ~ "penguins_simple_other",
+    sd_value("penguins_simple") == "other" ~ "penguins_simple_other",
 
     # 2. Complex conditional showing
-    input$penguins_complex == "other" &
-      input$show_other == "show" ~
+    sd_value("penguins_complex") == "other" &
+      sd_value("show_other") == "show" ~
       "penguins_complex_other",
 
     # 3. Conditional showing based on a numeric value
-    as.numeric(input$car_number) > 1 ~ "ev_ownership",
+    sd_value("car_number") > 1 ~ "ev_ownership",
 
     # 4. Conditional showing based on multiple inputs
-    input$fav_fruits %in% c("apple", "banana") ~ "apple_or_banana",
-    length(input$fav_fruits) > 3 ~ "fruit_number",
+    sd_value("fav_fruits") %in% c("apple", "banana") ~ "apple_or_banana",
+    length(sd_value("fav_fruits")) > 3 ~ "fruit_number",
 
     # 5. Conditional showing based on a custom function
     more_than_one_pet(input) ~ "pet_type",
 
     # 6. Conditional page showing
-    input$pet_preference == 'cat' ~ 'cat_page',
-    input$pet_preference == 'dog' ~ 'dog_page'
+    sd_value("pet_preference") == 'cat' ~ 'cat_page',
+    sd_value("pet_preference") == 'dog' ~ 'dog_page'
   )
 
   # Run surveydown server and define database
