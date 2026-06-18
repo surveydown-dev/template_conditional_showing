@@ -1,6 +1,16 @@
-A template of [conditional showing](https://surveydown.org/docs/conditional-logic#conditional-showing) (show a question or a page if a condition is true).
+A template of conditional showing (show a question or a page if a condition is true).
 
-To create this template, run this command in your R console:
+### 🟢 Demo
+
+Try the live survey: https://surveydown-conditional-showing.share.connect.posit.cloud
+
+### Template page
+
+https://surveydown.org/templates/conditional_showing
+
+### Create this template
+
+Run this command in your R console:
 
 ```r
 surveydown::sd_create_survey(
@@ -9,4 +19,6 @@ surveydown::sd_create_survey(
 )
 ```
 
-Refer to the [Start with a template](https://surveydown.org/docs/getting-started#start-with-a-template) section for more details.
+### Documentation
+
+[Conditional logic: conditional showing](https://surveydown.org/docs/conditional-logic#conditional-showing) · [Start with a template](https://surveydown.org/docs/getting-started#start-with-a-template)
