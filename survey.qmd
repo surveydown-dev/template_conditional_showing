@@ -10,7 +10,7 @@ theme-settings:
 
 survey-settings:
   mode: preview
-  show-previous: false
+  show-previous: true
   use-cookies: false
   auto-scroll: false
   rate-survey: false
@@ -180,7 +180,7 @@ sd_question(
 
 ## 5. Conditional showing based on a custom function
 
-Here I only want to show the car type question if the user owns more than 1 car. If you input a number greater than 1 in the car number question, the car type question will appear.
+Here I only want to show the pet type question if the user owns more than 1 pet. If you input a number greater than 1 in the pet number question, the pet type question will appear.
 
 ```{r}
 sd_question(
