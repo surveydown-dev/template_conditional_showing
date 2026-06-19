@@ -1,16 +1,12 @@
+# Template - Conditional Showing
+
 A template of conditional showing (show a question or a page if a condition is true).
 
-### 🟢 Demo
+### See it in action
 
-Try the live survey: https://surveydown-conditional-showing.share.connect.posit.cloud
-
-### 🎬 Walkthrough Recording
+Watch the **Walkthrough recording:**
 
 [![Walkthrough recording](video-thumbnail.png)](https://cdn.jsdelivr.net/gh/surveydown-dev/template_conditional_showing@main/video-recording.mp4)
-
-### Template page
-
-https://surveydown.org/templates/conditional_showing
 
 ### Create this template
 
@@ -23,6 +19,8 @@ surveydown::sd_create_survey(
 )
 ```
 
-### Documentation
+### Learn more
 
-[Conditional logic: conditional showing](https://surveydown.org/docs/conditional-logic#conditional-showing) · [Start with a template](https://surveydown.org/docs/getting-started#start-with-a-template)
+- [Template page - Conditional Showing](https://surveydown.org/templates/conditional_showing)
+- [Document page - Conditional logic: conditional showing](https://surveydown.org/docs/conditional-logic#conditional-showing)
+- [Document page - Start with a template](https://surveydown.org/docs/getting-started#start-with-a-template)
