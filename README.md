@@ -4,13 +4,11 @@ A template of conditional showing (show a question or a page if a condition is t
 
 Try the live survey: https://surveydown-conditional-showing.share.connect.posit.cloud
 
-### 🎬 Video
+### 🎬 Walkthrough Recording
 
-A video walkthrough of this template:
+[![Walkthrough recording](video-thumbnail.jpg)](https://github.com/surveydown-dev/template_conditional_showing/blob/main/video-recording.mp4)
 
-<video src="https://github.com/surveydown-dev/template_conditional_showing/raw/main/video-recording.mp4" controls width="100%"></video>
-
-[▶ Watch the walkthrough](https://github.com/surveydown-dev/template_conditional_showing/raw/main/video-recording.mp4)
+*Click the image above to play the recording.*
 
 ### Template page
 
